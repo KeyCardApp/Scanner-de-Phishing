@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head> 
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<h1>Scanner de Phishing</h1>
+    <form action="#" th:action="@{/scanner}" th:object="${scanner}" method="post">
+        <p>Coloque seu email: <textarea type="text" th:field="*{content}" ></textarea></p>
+        <p><input type="submit" value="Verificar" /></p>
+    </form>
+</body>
+</html>
